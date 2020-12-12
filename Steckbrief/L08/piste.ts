@@ -211,7 +211,7 @@ namespace Skipiste {
         crc2.moveTo(230, 350);
         crc2.lineTo(245, 370);
         crc2.closePath();
-        crc2.stroke();   
+        crc2.stroke();
 
         
 
