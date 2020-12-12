@@ -71,6 +71,17 @@ var Skipiste;
         crc2.stroke();
         crc2.fillStyle = "yellow";
         crc2.fill();
+        function Snowflake(_x, _y) {
+            crc2.beginPath();
+            crc2.arc(_x, _y, 1.5, 0, 2 * Math.PI);
+            crc2.fillStyle = "#FFFFFF";
+            crc2.fill();
+        }
+        for (let i = 0; i < 5000; i++) {
+            let x = Math.random() * 800;
+            let y = Math.random() * 600;
+            Snowflake(x, y);
+        }
     }
 })(Skipiste || (Skipiste = {}));
 //# sourceMappingURL=piste.js.map
