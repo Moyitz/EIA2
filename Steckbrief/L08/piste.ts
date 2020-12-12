@@ -2,12 +2,31 @@ namespace Skipiste {
     window.addEventListener("load", init);
 
 
+
+
+
     function init(): void {
         let canvas: HTMLCanvasElement = document.getElementsByTagName("canvas")[0];
         console.log(canvas);
   
         let crc2: CanvasRenderingContext2D = canvas.getContext("2d");
         console.log(crc2);
+
+        const drawCloud = (x, y) => {
+            crc2.beginPath();
+            crc2.arc(x, y, 60, Math.PI * 0.5, Math.PI * 1.5);
+            crc2.arc(x + 70, y - 60, 70, Math.PI * 1, Math.PI * 1.85);
+            crc2.arc(x + 152, y - 45, 50, Math.PI * 1.37, Math.PI * 1.91);
+            crc2.arc(x + 200, y, 60, Math.PI * 1.5, Math.PI * 0.5);
+            crc2.moveTo(x + 200, y + 60);
+            crc2.lineTo(x, y + 60);
+            crc2.strokeStyle = "#797874";
+            crc2.stroke();
+            crc2.fillStyle = "#8ED6FF";
+            crc2.fill()
+        }
+    
+        drawCloud(-40,105);
 
   
         crc2.beginPath();
@@ -114,6 +133,7 @@ namespace Skipiste {
             let y = Math.random() * 600;
             Snowflake(x, y);
         }
+    
 
         
 
