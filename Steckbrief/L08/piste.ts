@@ -5,6 +5,8 @@ namespace Skipiste {
 
 
 
+
+
     function init(): void {
         let canvas: HTMLCanvasElement = document.getElementsByTagName("canvas")[0];
         console.log(canvas);
@@ -217,5 +219,6 @@ namespace Skipiste {
 
         
 
-    }
+
 }
+    }
