@@ -16,12 +16,21 @@ namespace Skipiste {
         crc2.stroke();
    
         crc2.fillStyle = "black";
-        crc2.fillRect(180, 95, 65, 40);
+        crc2.fillRect(180, 130, 65, 40);
+        crc2.beginPath();
+        crc2.moveTo(200, 100);
+        crc2.lineTo(220, 150);
+        crc2.stroke();
         crc2.fillStyle = "black";
-        crc2.fillRect(300, 130, 65, 40);
+        crc2.fillRect(300, 170, 65, 40);
+        crc2.moveTo(350, 200);
+        crc2.lineTo(320, 150);
+        crc2.stroke();
         crc2.fillStyle = "black";
-        crc2.fillRect(450, 170, 65, 40);
-      
+        crc2.fillRect(450, 220, 65, 40);
+        crc2.moveTo(460, 180);
+        crc2.lineTo(470, 260);
+        crc2.stroke();
         crc2.beginPath();
         crc2.moveTo(50, 300); 
         crc2.lineTo(600, 520);
@@ -105,6 +114,8 @@ namespace Skipiste {
             let y = Math.random() * 600;
             Snowflake(x, y);
         }
+
+        
 
     }
 }
