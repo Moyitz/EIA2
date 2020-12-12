@@ -26,7 +26,7 @@ namespace Skipiste {
             crc2.fill()
         }
     
-        drawCloud(-40,105);
+        drawCloud(-40,100);
 
   
         crc2.beginPath();
@@ -133,7 +133,87 @@ namespace Skipiste {
             let y = Math.random() * 600;
             Snowflake(x, y);
         }
+        
+        crc2.strokeStyle = "black";
+        crc2.beginPath();
+        crc2.moveTo(110, 320);
+        crc2.lineTo(150, 330);
+        crc2.closePath();
+        crc2.stroke();
+
+        crc2.fillStyle = "black";
+        crc2.beginPath();
+        crc2.ellipse(130, 280, 11, 7, 10, 10, 99);
+        crc2.closePath();
+        crc2.fill();
+        crc2.stroke();
+
+        crc2.fillStyle = "blue";
+        crc2.strokeStyle = crc2.fillStyle;
+        crc2.lineWidth = 1;
+        crc2.beginPath();
+        crc2.ellipse(132, 304, 15, 14, 10, 10, 99);
+        crc2.closePath();
+        crc2.fill();
+        crc2.stroke();
+        
+        crc2.lineWidth = 5;
+        
+        crc2.beginPath();
+        crc2.moveTo(130, 330);
+        crc2.lineTo(120, 300);
+        crc2.closePath();
+        crc2.stroke();
+
+ 
+        crc2.lineWidth = 5;
+        crc2.beginPath();
+        crc2.moveTo(150, 330);
+        crc2.lineTo(130, 300);
+        crc2.closePath();
+        crc2.stroke();
+
+
+        crc2.strokeStyle = "black";
+        crc2.beginPath();
+        crc2.moveTo(210, 360);
+        crc2.lineTo(250, 380);
+        crc2.closePath();
+        crc2.stroke();
+
+        crc2.fillStyle = "green";
+        crc2.beginPath();
+        crc2.ellipse(230, 320, 11, 7, 10, 10, 99);
+        crc2.closePath();
+        crc2.fill();
+        crc2.stroke();
+
+
+        crc2.strokeStyle = crc2.fillStyle;
+        crc2.lineWidth = 1;
+        crc2.fillStyle = "black"
+        crc2.beginPath();
+        crc2.ellipse(232, 344, 15, 14, 10, 10, 99);
+        crc2.closePath();
+        crc2.fill();
+        crc2.stroke();
     
+        crc2.lineWidth = 5;
+        crc2.beginPath();
+        crc2.moveTo(230, 350);
+        crc2.lineTo(220, 360);
+        crc2.closePath();
+        crc2.stroke();
+     
+        crc2.lineWidth = 5;
+        
+        crc2.beginPath();
+        crc2.moveTo(230, 350);
+        crc2.lineTo(245, 370);
+        crc2.closePath();
+        crc2.stroke();   
+
+        
 
         
 
